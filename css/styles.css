@@ -3048,7 +3048,6 @@ textarea.form-control-lg {
 .btn-primary {
   color: #fff;
   background-color: #1F355F;
-  border-color: #0091BE;
 }
 .btn-primary:hover {
   color: #fff;
@@ -3073,6 +3072,16 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #1F355F;
   border-color: #1F355F;
+}
+
+.btn-social {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
 }
 
 .btn-secondary {
@@ -7736,6 +7745,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-primary-opacity {
+  --bs-text-opacity: 0.7;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-secondary {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
@@ -7824,6 +7838,11 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-primary-opacity {
+  --bs-bg-opacity: 0.7;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
@@ -11314,13 +11333,7 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
-}
-
-/* Contact */
-
-#contact {
-  padding-bottom: 2rem !important;
+  padding: 7rem 0;
 }
 
 .text-white-75 {
