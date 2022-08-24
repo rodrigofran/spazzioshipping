@@ -97,8 +97,15 @@ hr {
   opacity: 0.25;
 }
 
-#brand:hover {
-  fill: #000;
+/* Brand */
+
+#nav-brand, #brand path {
+  transition: 300ms linear;
+}
+
+#brand:hover path {
+  fill: #0091BE;
+  /* transform: scale(1.1); */
 }
 
 hr:not([size]) {
@@ -4092,7 +4099,7 @@ textarea.form-control-lg {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -11329,17 +11336,16 @@ body {
   border-radius: 10rem;
 }
 
-.btn-xl:hover {
-  
-}
-
-
 hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
   background-color: #1F355F;
   opacity: 1;
+}
+
+#firstDivider {
+  opacity: 0.5;
 }
 
 hr.divider-light {
@@ -11439,8 +11445,6 @@ header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
   }
 }
-
-#nav-brand
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
   max-width: 1920px;
