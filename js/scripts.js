@@ -62,6 +62,6 @@ var loader = document.querySelector(".loader")
 
 window.addEventListener("load", vanish);
 
-setInterval(function vanish() {
+function vanish() {
     loader.classList.add("disppear");
-},200)
+}
